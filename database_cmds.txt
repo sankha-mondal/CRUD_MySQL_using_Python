@@ -5,6 +5,16 @@ LDFLAGS=-L/usr/local/opt/openssl/lib pip3 install mysql-connector-python
 
 ==================================================================================================
 
+C:\Users\sankmond>mysql --version
+mysql  Ver 8.0.40 for Win64 on x86_64 (MySQL Community Server - GPL)
+
+C:\Users\sankmond>mysql -u root -p
+Enter password: ************
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 16
+
+==================================================================================================
+
 show databases;
 create database mydb;
 use mydb;
