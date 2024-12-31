@@ -1,0 +1,6 @@
+show databases;
+create database mydb;
+use mydb;
+show tables;
+create table employee(id int, name varchar(30), salary int)
+select * from employee;
