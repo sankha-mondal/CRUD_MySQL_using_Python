@@ -10,7 +10,7 @@ print('=' * 40)
 
 # ====== List Employees =====
 
-def list_students():
+def list_employee():
     cursor_rd = conn.cursor()
 
     print('Fetch all rows')
@@ -22,7 +22,7 @@ def list_students():
         print(row)
     
     
-# ====== Create Student =====
+# ====== Create Employee =====
 
 def create_employee(id, name, salary):
     strQ = "insert into employee (id, name, salary) values  ('"+id+"', '"+name+"', '"+salary+"')"
@@ -113,7 +113,7 @@ def menu():
     # ===== Mainline =====
     print(MenuSelected)
     if MenuSelected == 1:
-        list_students()
+        list_employee()
 
     if MenuSelected == 2:
         id = ''
@@ -130,12 +130,12 @@ def menu():
             create_employee(id, i_name, i_salary )
 
     if MenuSelected == 3:
-        list_students()
+        list_employee()
         update_employee()
 
 
     if MenuSelected == 4:
-        list_students()
+        list_employee()
         delete_employee()
 
     if MenuSelected == 5:
