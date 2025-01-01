@@ -83,7 +83,7 @@ def delete_employee():
         print("Employee with ID = " + employee_to_delete + " deleted")
         conn.commit()
 
-
+# ==== Main menu ====
 def menu():
     # Setup Menu Choices --------
     Menu_Items = {'1': 'List of Employees', '2': 'Add new Employee data', '3': 'Update Employees data', '4': 'Delete Employees data', '5': 'Exit'}
